@@ -1,0 +1,120 @@
+.about {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.about-title {
+    padding-left: 3.5rem;
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    color: rgb(206, 203, 203);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.about-title-container {
+    width: 40%;
+}
+
+.about-title div {
+    transform: translateY(140px);
+    transition: transform .5s;
+}
+
+.about-container {
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 55%;
+}
+
+.about-description {
+    font-size: 1.3rem;
+    padding-bottom: 2.5rem;
+    color: #9DA7C4;
+    text-align: justify;
+    text-indent: 3rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s opacity 1s;
+    font-weight: normal;
+}
+
+.about-description span {
+    color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .about-title {
+        font-size: 6.5rem;
+        clip-path: polygon(0% 0%, 150% 0%, 150% 100%, 0% 100%);
+    }
+
+    .about-description {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .about {
+        flex-direction: column;
+        /* gap: 25vh; */
+        height: 40vh;
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 4rem;
+        clip-path: none;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-description {
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1.1rem;
+        text-align: justify;
+        text-indent: 3rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .about {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:400px) {
+    .about {
+        height: 85vh;
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .about-description {
+        font-size: 0.95rem;
+    }
+}

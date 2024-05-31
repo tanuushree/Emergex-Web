@@ -1,0 +1,164 @@
+.partner-container {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partner-title {
+    align-self: flex-start;
+    padding-left: 3.5rem;
+    height: 40%;
+}
+
+.partner-title h1 {
+    font-size: 7rem;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.partner-title h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
+}
+
+.partner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.partner-content img {
+    width: auto;
+    height: 150px;
+    margin: 0px 50px;
+    padding: 0px 0px;
+}
+
+.partner-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.partner-logo {
+    transform: translateY(200px);
+    padding: 5rem;
+    opacity: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .partner-container {
+        height: auto;
+    }
+
+    .partner-title h1 {
+        font-size: 6rem;
+    }
+
+    .partner-content {
+        flex-direction: column;
+    }
+
+    .partner-content img {
+        height: 100px;
+        margin: 0px 30px;
+    }
+
+    .partner-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .partner-container {
+        height: auto;
+    }
+
+    .partner-title {
+        padding-left: 2rem;
+    }
+
+    .partner-title h1 {
+        font-size: 5rem;
+    }
+
+    .partner-content img {
+        height: 65px;
+        margin: 0px 20px;
+
+    }
+
+    .partner-text {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .partner-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .partner-title {
+        justify-content: center;
+    }
+
+    .partner-title h1 {
+        flex-direction: row !important;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .partner-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .partner-logo {
+        padding: 0;
+    }
+
+    .partner-content img {
+        height: 80px;
+        margin-top: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partner-text {
+        font-size: 1rem;
+        margin-top: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+    .partner-container {
+        height: auto;
+        justify-content: center;
+    }
+
+    .partner-title h1 {
+        font-size: 30px;
+        margin-bottom: 0rem;
+    }
+
+    .partner-content img {
+        height: 60px;
+    }
+
+    .partner-text {
+        font-size: 0.8rem;
+    }
+}

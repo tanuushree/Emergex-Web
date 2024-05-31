@@ -1,0 +1,122 @@
+.objectives-container {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.objectives-container h1 {
+    padding-left: 3.5rem;
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    /* padding-bottom: 2rem; */
+    text-transform: uppercase;
+    color: rgb(206, 203, 203);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.objectives-container h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
+}
+
+.obj-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.obj-card {
+    width: 25%;
+    background-color: #2a2a39;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+    /* -webkit-box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53);
+    -moz-box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53);
+    box-shadow: 0px 5px 11px 0px rgba(255, 255, 255, 0.53); */
+}
+
+.obj-card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #ffffff44;
+}
+
+.obj-card .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    background-image: radial-gradient(circle at 50% -20%, #b5b5b522, #0000000f);
+}
+
+.obj-card img {
+    height: 250px;
+    width: 250px;
+    border: none;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: 8px;
+}
+
+.obj-content {
+    padding: 2rem;
+    padding-top: 0;
+    color: white;
+}
+
+.obj-content p {
+    color: #9ca2ba;
+}
+
+.objectives-container>p {
+    color: #9ca2ba;
+    padding-left: 4rem;
+    text-indent: 4rem;
+    font-size: 1.3rem;
+    /* margin-top: 0; */
+}
+
+.objectives-container>p>span {
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px) {
+    .objectives-container {
+        padding-top: 2rem;
+        margin: -1px;
+    }
+
+    .objectives-container h1 {
+
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .objectives-container>p {
+        padding-left: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .obj-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .obj-card {
+        width: 90%;
+    }
+}

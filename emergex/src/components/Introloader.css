@@ -1,0 +1,46 @@
+.flex,
+.flex__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex__col {
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main.flex__col {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform-origin: top;
+    z-index: 999;
+}
+
+
+
+.intro-loader {
+    font-size: 6rem;
+}
+
+@media screen and (max-width:800px) {
+    .intro-loader {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,134 @@
+.ecosystem {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.eco-content {
+    height: 75vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eco-title h1 {
+    font-size: 6.5rem;
+    padding-left: 3.5rem;
+    width: 100%;
+    margin: 0;
+    font-weight: BOLD;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.eco-title h1 div {
+    transform: translateY(140px);
+    transition: transform .5s;
+}
+
+.circle-group {
+    position: absolute;
+}
+
+.ecosystem li {
+    position: absolute;
+    width: 0;
+    height: 0%;
+    margin: -20% 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+
+.eco-content li .circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -10%;
+    background: linear-gradient(333deg, rgba(111, 228, 125, 1) 15%, rgba(82, 112, 255, 1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    /*  */
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    margin: 80px 0px;
+    /*  */
+    transition: all .8s ease-in-out;
+}
+
+.eco-content.open li .circle {
+    width: 150px;
+    height: 150px;
+    line-height: 1.2;
+    margin: 100px 0px;
+    font-size: 20px;
+}
+
+.eco-btn {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background: #428bca;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    left: 80%;
+}
+
+.eco-label {
+    font-size: 44px;
+    z-index: 1;
+}
+
+.gradient-text {
+    background: linear-gradient(333deg, rgba(113, 231, 122, 1) 21%, rgba(2, 106, 252, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 44px;
+}
+
+@media screen and (max-width:800px) {
+    .eco-title {
+        padding-left: 0;
+    }
+
+    .eco-content {
+        height: 50vh;
+    }
+
+    .eco-title h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .ecosystem {
+        margin-top: -0.1rem;
+        overflow: hidden;
+    }
+
+    .eco-label {
+        font-size: 2rem;
+    }
+
+    .eco-content.open li .circle {
+        width: 120px;
+        height: 120px;
+        margin: 70px 0px;
+        font-size: 1rem;
+    }
+}
