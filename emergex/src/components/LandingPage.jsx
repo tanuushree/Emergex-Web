@@ -4,6 +4,7 @@ import './LandingPage.css';
 import Navbar from './Navbar';
 import { isMobile } from 'react-device-detect';
 import { useGSAP } from '@gsap/react';
+
 export default function LandingPage() {
     const titleRef = useRef(null);
     const homeContainer = useRef(null)
@@ -67,12 +68,13 @@ export default function LandingPage() {
             <div className='landing'>
 
                 <h1 ref={titleRef} className='land-title'>
-                    {Array.from("EmergeX").map((letter, index) => (
+                    {Array.from("Xinnovate").map((letter, index) => (
                         <div key={index} className="letter">{letter}</div>
                     ))}
                 </h1>
 
-                <h3 className='landing-description'>Your one stop solution for all emerging technologies.</h3>
+                <h3 className='landing-description'>by <strong>Xinnovate</strong> in collaboration with Kerala Blockchain Academy and XDC blockchain.</h3>
+                <h3 className='landing-description'>Coming on 13-14 July.</h3>
             </div>
         </div>
     );
