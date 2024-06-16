@@ -72,7 +72,7 @@ export default function LandingPage() {
                         <div key={index} className="letter">{letter}</div>
                     ))}
                 </h1>
-
+                <h3 className='landing-description'>Kerela's Largest Web3 Hackathon</h3>
                 <h3 className='landing-description'>by <strong>EmergeX</strong> in collaboration with Kerala Blockchain Academy and XDC blockchain.</h3>
                 <h3 className='landing-description'>Coming on 13-14 July.</h3>
             </div>
