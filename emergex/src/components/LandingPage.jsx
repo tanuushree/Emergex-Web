@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+eimport React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
 import './LandingPage.css';
 import Navbar from './Navbar';
@@ -73,7 +73,7 @@ export default function LandingPage() {
                     ))}
                 </h1>
 
-                <h3 className='landing-description'>by <strong>Xinnovate</strong> in collaboration with Kerala Blockchain Academy and XDC blockchain.</h3>
+                <h3 className='landing-description'>by <strong>EmergeX</strong> in collaboration with Kerala Blockchain Academy and XDC blockchain.</h3>
                 <h3 className='landing-description'>Coming on 13-14 July.</h3>
             </div>
         </div>
